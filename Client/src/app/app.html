@@ -1,0 +1,7 @@
+<h1 class="text-3xl text-red-500">Hello, {{ title() }}</h1>
+<p>Congratulations! Your app is running. 🎉</p>
+<ul>
+  @for(member of members();track member.id) {
+    <li>{{ member.id }} - {{ member.displayName }}</li>
+  }
+</ul>
